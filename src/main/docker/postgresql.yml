@@ -1,0 +1,11 @@
+version: '2'
+services:
+    datadictionary-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/DataDictionary/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=DataDictionary
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
